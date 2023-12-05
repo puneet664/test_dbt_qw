@@ -1,0 +1,34 @@
+version: 1
+source: DataHub
+owners:
+  users:
+    - mjames
+url: "https://github.com/datahub-project/datahub/"
+nodes:
+  - name: Classification
+    description: A set of terms related to Data Classification
+    knowledge_links:
+      - label: Wiki link for classification
+        url: "https://en.wikipedia.org/wiki/Classification"
+    terms:
+      - name: Sensitive
+        description: Sensitive Data
+        custom_properties:
+          is_confidential: false
+      - name: Confidential
+        description: Confidential Data
+        custom_properties:
+          is_confidential: true
+  - name: PersonalInformation
+    description: All terms related to personal information
+    owners:
+      users:
+        - mjames
+    terms:
+      - name: Email
+        description: An individual's email address
+        inherits:
+          - Classification.Confidential
+        owners:
+          groups:
+            - Trust and Safety
