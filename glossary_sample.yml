@@ -1,8 +1,4 @@
 version: 1                                              # the version of business glossary file config the config conforms to. Currently the only version released is `1`.
 source: DataHub                                         # the source format of the terms. Currently only supports `DataHub`
 owners: puneet                                               # owners contains two nested fields
-url: "https://github.com/puneet664/test_dbt_qw" 
-
-nodes:
-- name: Shipping                                                # name of the node
-  description: Provides terms related to the shipping domain    # description of the node
+url: "https://github.com/puneet664/test_dbt_qw"
