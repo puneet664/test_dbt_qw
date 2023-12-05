@@ -7,7 +7,7 @@ owners:                                                 # owners contains two ne
     - logistics
 url: "https://github.com/puneet664/test_dbt_qw" 
 
-nodes
+nodes:
 - name: Shipping                                                # name of the node
   description: Provides terms related to the shipping domain    # description of the node
   owners:                                                       # (optional) owners contains 2 nested fields
@@ -15,8 +15,6 @@ nodes
       - njones
     groups:                                                     # (optional) a  list of group IDs
       - logistics
-  nodes:                                                        # list of child **GlossaryNode** objects
-    ...
   knowledge_links:                                              # (optional) list of **KnowledgeCard** objects
     - label: Wiki link for shipping
       url: "https://en.wikipedia.org/wiki/Freight_transport"
