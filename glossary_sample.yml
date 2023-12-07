@@ -1,8 +1,8 @@
-version: '1'                                              # the version of business glossary file config the config conforms to. Currently the only version released is `1`.
+version: 1                                              # the version of business glossary file config the config conforms to. Currently the only version released is `1`.
 source: DataHub                                         # the source format of the terms. Currently only supports `DataHub`
-owners: 'datahub'                                               # owners contains two nested fields
+owners: puneet                                               # owners contains two nested fields
   users:                                                # (optional) a list of user IDs
-    - 'datahub'
+    - datahub
   groups:                                               # (optional) a list of group IDs
     - logistics
 url: "https://github.com/puneet664/test_dbt_qw" 
