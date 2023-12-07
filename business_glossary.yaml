@@ -23,7 +23,7 @@ nodes:
         description: Highly Confidential Data
         custom_properties:
           is_confidential: true
-        domain: Marketing
+        domain: Account
   - name: PersonalInformation
     description: All terms related to personal information
     owners:
@@ -77,7 +77,7 @@ nodes:
         knowledge_links:
           - url: "https://en.wikipedia.org/wiki/Address"
             label: Wiki link
-        domain: "urn:li:domain:Logistics"
+        domain: "Account"
     knowledge_links:
       - label: Wiki link for shipping
         url: "https://en.wikipedia.org/wiki/Freight_transport"
