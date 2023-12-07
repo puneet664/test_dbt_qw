@@ -154,4 +154,4 @@ nodes:
           - Housing.Kitchen
         knowledge_links:
           - url: "https://en.wikipedia.org/wiki/Spoon"
-            label: Wiki link
+            label: Wiki link7
