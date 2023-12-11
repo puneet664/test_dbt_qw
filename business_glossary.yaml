@@ -33,7 +33,7 @@ nodes:
           - Classification.Confidential
         owners:
           groups:
-            - test_datahub
+            - Data Stewards
       - name: Address
         description: A physical address
       - name: Gender
@@ -46,7 +46,7 @@ nodes:
       users:
         - DataHub
       groups:
-        - test_datahub
+        - Data Stewards
     terms:
       - name: FullAddress
         description: A collection of information to give the location of a building or plot of land.
@@ -54,7 +54,7 @@ nodes:
           users:
             - DataHub
           groups:
-            - test_datahub
+            - Data Stewards
         term_source: "EXTERNAL"
         source_ref: FIBO
         source_url: "https://www.google.com"
@@ -77,7 +77,7 @@ nodes:
     description: Provides basic concepts such as account, account holder, account provider, relationship manager that are commonly used by financial services providers to describe customers and to determine counterparty identities
     owners:
       groups:
-        - test_datahub
+        - Data Stewards
     terms:
       - name: Account
         description: Container for records associated with a business arrangement for regular transactions and services
@@ -99,7 +99,7 @@ nodes:
       users:
         - DataHub
       groups:
-        - test_datahub
+        - Data Stewards
     nodes:
       - name: Colors
         description: "Colors that are used in Housing construction"
