@@ -2,7 +2,7 @@ version: 1
 source: DataHub
 owners:
   users:
-    - datahub
+   - DataHub
 url: "https://github.com/datahub-project/datahub/"
 nodes:
   - name: Classification
@@ -13,22 +13,16 @@ nodes:
     terms:
       - name: Sensitive
         description: Sensitive Data
-        custom_properties:
-          is_confidential: false
       - name: Confidential
         description: Confidential Data
-        custom_properties:
-          is_confidential: true
       - name: HighlyConfidential
         description: Highly Confidential Data
-        custom_properties:
-          is_confidential: true
         domain: Account
   - name: PersonalInformation
     description: All terms related to personal information
     owners:
       users:
-        - datahub
+        - DataHub
     terms:
       - name: Email
         ## An example of using an id to pin a term to a specific guid
@@ -38,8 +32,8 @@ nodes:
         inherits:
           - Classification.Confidential
         owners:
-          users:
-            - datahub
+          groups:
+            - test_datahub
       - name: Address
         description: A physical address
       - name: Gender
@@ -50,13 +44,17 @@ nodes:
     description: Provides terms related to the shipping domain
     owners:
       users:
-        - datahub
+        - DataHub
+      groups:
+        - test_datahub
     terms:
       - name: FullAddress
         description: A collection of information to give the location of a building or plot of land.
         owners:
           users:
-            - datahub
+            - DataHub
+          groups:
+            - test_datahub
         term_source: "EXTERNAL"
         source_ref: FIBO
         source_url: "https://www.google.com"
@@ -68,8 +66,6 @@ nodes:
           - Shipping.StreetAddress
         related_terms:
           - Housing.Kitchen.Cutlery
-        custom_properties:
-          - is_used_for_compliance_tracking: true
         knowledge_links:
           - url: "https://en.wikipedia.org/wiki/Address"
             label: Wiki link
@@ -80,8 +76,8 @@ nodes:
   - name: ClientsAndAccounts
     description: Provides basic concepts such as account, account holder, account provider, relationship manager that are commonly used by financial services providers to describe customers and to determine counterparty identities
     owners:
-      users:
-        - datahub
+      groups:
+        - test_datahub
     terms:
       - name: Account
         description: Container for records associated with a business arrangement for regular transactions and services
@@ -101,7 +97,9 @@ nodes:
     description: Provides terms related to the housing domain
     owners:
       users:
-        - datahub
+        - DataHub
+      groups:
+        - test_datahub
     nodes:
       - name: Colors
         description: "Colors that are used in Housing construction"
