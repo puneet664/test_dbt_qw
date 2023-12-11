@@ -38,8 +38,8 @@ nodes:
         inherits:
           - Classification.Confidential
         owners:
-          groups:
-            - test_datahub
+          users:
+            - datahub
       - name: Address
         description: A physical address
       - name: Gender
@@ -51,16 +51,12 @@ nodes:
     owners:
       users:
         - datahub
-      groups:
-        - test_datahub
     terms:
       - name: FullAddress
         description: A collection of information to give the location of a building or plot of land.
         owners:
           users:
             - datahub
-          groups:
-            - test_datahub
         term_source: "EXTERNAL"
         source_ref: FIBO
         source_url: "https://www.google.com"
@@ -84,8 +80,8 @@ nodes:
   - name: ClientsAndAccounts
     description: Provides basic concepts such as account, account holder, account provider, relationship manager that are commonly used by financial services providers to describe customers and to determine counterparty identities
     owners:
-      groups:
-        - test_datahub
+      users:
+        - datahub
     terms:
       - name: Account
         description: Container for records associated with a business arrangement for regular transactions and services
@@ -106,8 +102,6 @@ nodes:
     owners:
       users:
         - datahub
-      groups:
-        - test_datahub
     nodes:
       - name: Colors
         description: "Colors that are used in Housing construction"
