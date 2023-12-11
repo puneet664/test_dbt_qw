@@ -2,7 +2,7 @@ version: 1
 source: DataHub
 owners:
   users:
-    datahub
+    - datahub
 url: "https://github.com/datahub-project/datahub/"
 nodes:
   - name: Classification
