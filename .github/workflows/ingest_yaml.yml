@@ -1,9 +1,5 @@
 name: Ingest YAML Files
- 
-on:
-  schedule:
-    - cron: '0 0 * * *'  # Schedule to run daily at midnight UTC (adjust as needed)
- 
+
 jobs:
   ingest-yaml:
     runs-on: ubuntu-latest  # Using Ubuntu for a wider range of tools
