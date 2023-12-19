@@ -1,0 +1,10 @@
+source:
+    type: datahub-business-glossary
+    config:
+        file: nested_glossary_test.yaml
+        enable_auto_id: true
+sink:
+    type: datahub-rest
+    config:
+         server: 'http://4.156.173.229:8080'
+         token: eyJhbGciOiJIUzI1NiJ9.eyJhY3RvclR5cGUiOiJVU0VSIiwiYWN0b3JJZCI6ImRhdGFodWIiLCJ0eXBlIjoiUEVSU09OQUwiLCJ2ZXJzaW9uIjoiMiIsImp0aSI6IjAwNzIyYzlmLTk4NTAtNDRkYi04ZGFmLWQyYjA2MDJjYWYwZCIsInN1YiI6ImRhdGFodWIiLCJleHAiOjE3MDU0ODgzMjcsImlzcyI6ImRhdGFodWItbWV0YWRhdGEtc2VydmljZSJ9.-0L6MWsfIui4K0wlpcGkBLuwLR2ZTBC0_Gdh46PusH8
