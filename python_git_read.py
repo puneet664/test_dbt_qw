@@ -9,6 +9,4 @@ github_session.auth = (username, token)
 # url = 'https://github.com/puneet664/test_dbt_qw/blob/main/data_test.csv'
 url='https://raw.githubusercontent.com/puneet664/test_dbt_qw/main/data_test.csv'
 export = requests.get(url,verify=False).text
-print(export)
 df = pd.read_csv(io.StringIO(export))
-print(df)
