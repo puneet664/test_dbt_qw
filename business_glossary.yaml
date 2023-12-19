@@ -2,7 +2,7 @@ version: 1
 source: DataHub
 owners:
   users:
-    mjames
+    datahub
 url: "https://github.com/datahub-project/datahub/"
 nodes:
   - name: Classification
@@ -28,7 +28,7 @@ nodes:
     description: All terms related to personal information
     owners:
       users:
-        - mjames
+        - datahub
     terms:
       - name: Email
         ## An example of using an id to pin a term to a specific guid
@@ -39,7 +39,7 @@ nodes:
           - Classification.Confidential
         owners:
           groups:
-            - Trust and Safety
+            - test_datahub
       - name: Address
         description: A physical address
       - name: Gender
@@ -50,17 +50,17 @@ nodes:
     description: Provides terms related to the shipping domain
     owners:
       users:
-        - njones
+        - datahub
       groups:
-        - logistics
+        - test_datahub
     terms:
       - name: FullAddress
         description: A collection of information to give the location of a building or plot of land.
         owners:
           users:
-            - njones
+            - datahub
           groups:
-            - logistics
+            - test_datahub
         term_source: "EXTERNAL"
         source_ref: FIBO
         source_url: "https://www.google.com"
@@ -85,7 +85,7 @@ nodes:
     description: Provides basic concepts such as account, account holder, account provider, relationship manager that are commonly used by financial services providers to describe customers and to determine counterparty identities
     owners:
       groups:
-        - finance
+        - test_datahub
     terms:
       - name: Account
         description: Container for records associated with a business arrangement for regular transactions and services
@@ -105,9 +105,9 @@ nodes:
     description: Provides terms related to the housing domain
     owners:
       users:
-        - mjames
+        - datahub
       groups:
-        - interior
+        - test_datahub
     nodes:
       - name: Colors
         description: "Colors that are used in Housing construction"
@@ -154,4 +154,4 @@ nodes:
           - Housing.Kitchen
         knowledge_links:
           - url: "https://en.wikipedia.org/wiki/Spoon"
-            label: Wiki link7
+            label: Wiki link
