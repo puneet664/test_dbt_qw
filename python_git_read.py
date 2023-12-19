@@ -28,7 +28,7 @@ file_name = 'data_push.csv'
  
 # Open the Git repository
 repo = Repo()
- 
+print(repo)
 # Write the CSV content to a file in the repository
 with open(f'{file_name}', 'w') as file:
     file.write(csv_content)
