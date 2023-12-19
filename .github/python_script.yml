@@ -1,0 +1,22 @@
+name: Run Python Script
+ 
+on:
+  push:
+    branches:
+      - main  # Replace with your branch name
+ 
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+ 
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Replace with your Python version
+ 
+      - name: Run Python Script
+        run: python your_script.py  # Replace with your Python script name

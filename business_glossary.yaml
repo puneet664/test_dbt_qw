@@ -2,7 +2,11 @@ version: 1
 source: DataHub
 owners:
   users:
+<<<<<<< HEAD
     datahub
+=======
+   - DataHub
+>>>>>>> 59280bcc7fe0704e8d9757a44de6e657145fccb5
 url: "https://github.com/datahub-project/datahub/"
 nodes:
   - name: Classification
@@ -13,22 +17,20 @@ nodes:
     terms:
       - name: Sensitive
         description: Sensitive Data
-        custom_properties:
-          is_confidential: false
       - name: Confidential
         description: Confidential Data
-        custom_properties:
-          is_confidential: true
       - name: HighlyConfidential
         description: Highly Confidential Data
-        custom_properties:
-          is_confidential: true
         domain: Account
   - name: PersonalInformation
     description: All terms related to personal information
     owners:
       users:
+<<<<<<< HEAD
         - datahub
+=======
+        - DataHub
+>>>>>>> 59280bcc7fe0704e8d9757a44de6e657145fccb5
     terms:
       - name: Email
         ## An example of using an id to pin a term to a specific guid
@@ -39,7 +41,11 @@ nodes:
           - Classification.Confidential
         owners:
           groups:
+<<<<<<< HEAD
             - test_datahub
+=======
+            - Data Stewards
+>>>>>>> 59280bcc7fe0704e8d9757a44de6e657145fccb5
       - name: Address
         description: A physical address
       - name: Gender
@@ -50,17 +56,29 @@ nodes:
     description: Provides terms related to the shipping domain
     owners:
       users:
+<<<<<<< HEAD
         - datahub
       groups:
         - test_datahub
+=======
+        - DataHub
+      groups:
+        - Data Stewards
+>>>>>>> 59280bcc7fe0704e8d9757a44de6e657145fccb5
     terms:
       - name: FullAddress
         description: A collection of information to give the location of a building or plot of land.
         owners:
           users:
+<<<<<<< HEAD
             - datahub
           groups:
             - test_datahub
+=======
+            - DataHub
+          groups:
+            - Data Stewards
+>>>>>>> 59280bcc7fe0704e8d9757a44de6e657145fccb5
         term_source: "EXTERNAL"
         source_ref: FIBO
         source_url: "https://www.google.com"
@@ -72,8 +90,6 @@ nodes:
           - Shipping.StreetAddress
         related_terms:
           - Housing.Kitchen.Cutlery
-        custom_properties:
-          - is_used_for_compliance_tracking: true
         knowledge_links:
           - url: "https://en.wikipedia.org/wiki/Address"
             label: Wiki link
@@ -85,7 +101,11 @@ nodes:
     description: Provides basic concepts such as account, account holder, account provider, relationship manager that are commonly used by financial services providers to describe customers and to determine counterparty identities
     owners:
       groups:
+<<<<<<< HEAD
         - test_datahub
+=======
+        - Data Stewards
+>>>>>>> 59280bcc7fe0704e8d9757a44de6e657145fccb5
     terms:
       - name: Account
         description: Container for records associated with a business arrangement for regular transactions and services
@@ -105,9 +125,15 @@ nodes:
     description: Provides terms related to the housing domain
     owners:
       users:
+<<<<<<< HEAD
         - datahub
       groups:
         - test_datahub
+=======
+        - DataHub
+      groups:
+        - Data Stewards
+>>>>>>> 59280bcc7fe0704e8d9757a44de6e657145fccb5
     nodes:
       - name: Colors
         description: "Colors that are used in Housing construction"
@@ -154,4 +180,8 @@ nodes:
           - Housing.Kitchen
         knowledge_links:
           - url: "https://en.wikipedia.org/wiki/Spoon"
+<<<<<<< HEAD
             label: Wiki link
+=======
+            label: Wiki link
+>>>>>>> 59280bcc7fe0704e8d9757a44de6e657145fccb5
