@@ -1,26 +1,24 @@
 name: Ingest YAML Files
  
-#on:
-  #schedule:
-    #- cron: '0 0 * * *'  # Schedule to run daily at midnight UTC (adjust as needed)
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Schedule to run daily at midnight UTC (adjust as needed)
  
 jobs:
   ingest-yaml:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest  # Using Ubuntu for a wider range of tools
  
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+ 
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.x'  # Replace with your Python version
-      -name: install acryl-datahub
-          run:
-             python -m pip instal acryl-datahub
  
-      - name: Install CLI Tool
-        run: |
-          # Replace the below command with the installation of your CLI tool
-          # Example: Install 'my-tool' CLI tool
-          datahub ingest -c https://github.com/puneet664/test_dbt_qw/blob/main/recipe_gls.dhub.yaml
+      - name: Install acryl-datahub
+        run: python -m pip install acryl-datahub  # Replace with the correct package name
+ 
+      - name: Ingest YAML using datahub
+        run: datahub ingest -c https://raw.githubusercontent.com/puneet664/test_dbt_qw/main/recipe_gls.dhub.yaml
