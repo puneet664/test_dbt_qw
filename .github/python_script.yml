@@ -7,7 +7,7 @@ on:
  
 jobs:
   run-script:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
  
     steps:
       - name: Checkout code
@@ -19,4 +19,4 @@ jobs:
           python-version: '3.x'  # Replace with your Python version
  
       - name: Run Python Script
-        run: python your_script.py  # Replace with your Python script name
+        run: python python_git_read.py  # Replace with your Python script name
