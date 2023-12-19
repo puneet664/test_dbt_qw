@@ -24,13 +24,13 @@ repo_path = 'https://github.com/puneet664/test_dbt_qw.git'  # Replace with your 
 commit_message = 'Add CSV file'
  
 # File name for the CSV in the repository
-file_name = 'data.csv'
+file_name = 'data_push.csv'
  
 # Open the Git repository
-repo = Repo(repo_path)
+repo = Repo()
  
 # Write the CSV content to a file in the repository
-with open(f'{repo_path}/{file_name}', 'w') as file:
+with open(f'{file_name}', 'w') as file:
     file.write(csv_content)
  
 # Stage changes
