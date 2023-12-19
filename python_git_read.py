@@ -10,3 +10,4 @@ github_session.auth = (username, token)
 url='https://raw.githubusercontent.com/puneet664/test_dbt_qw/main/data_test.csv'
 export = requests.get(url,verify=False).text
 df = pd.read_csv(io.StringIO(export))
+df.to_csv("file_name_git.csv")
