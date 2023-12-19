@@ -18,7 +18,7 @@ df.to_csv(csv_buffer, index=False)
 csv_content = csv_buffer.getvalue()
  
 # Path to your local repository
-repo_path = 'test_dbt_qw'  # Replace with your local repository path
+repo_path = 'https://github.com/puneet664/test_dbt_qw.git'  # Replace with your local repository path
  
 # Commit message
 commit_message = 'Add CSV file'
