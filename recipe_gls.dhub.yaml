@@ -1,7 +1,7 @@
 source:
     type: datahub-business-glossary
     config:
-        file: https://github.com/puneet664/test_dbt_qw/blob/main/business_glossary.yaml
+        file: https://github.com/puneet664/test_dbt_qw/blob/main/nested_glossary_test.yaml
         enable_auto_id: true
 sink:
     type: datahub-rest
