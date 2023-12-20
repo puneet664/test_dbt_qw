@@ -5,7 +5,7 @@ owners:
     - datahub
 url: "https://github.com/datahub-project/datahub/"
 nodes:
-  - name: Classification1
+  - name: Classification_file
     description: A set of terms related to Data Classification
     owners:
       users:
