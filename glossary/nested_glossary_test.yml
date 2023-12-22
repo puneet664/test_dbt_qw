@@ -1,5 +1,5 @@
 version: 1
-source: DataHub1
+source: DataHub
 owners:
   users:
     - datahub
