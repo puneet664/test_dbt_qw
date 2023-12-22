@@ -1,4 +1,4 @@
-name: Ingest YAML Files in datahub
+name: github
  
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
  
       - name: Fetch File from Private Repository
         env:
-          GH_TOKEN: ${{ secrets.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}} # Using GitHub token for authentication
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Using GitHub token for authentication
         run: |
           curl -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3.raw" -o nested_glossary_test.yaml -L https://raw.githubusercontent.com/puneet664/test_dbt_qw/main/nested_glossary_test.yaml
  
