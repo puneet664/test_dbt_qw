@@ -3,7 +3,7 @@ name: github
 on:
   push:
     paths:
-      - 'test_dbt_qw/glossary/*.yml'  # Define the path to the folder you want to trigger the workflow for
+      - 'glossary/**'  # Define the path to the folder you want to trigger the workflow for
     branches:
       - main  # Trigger on pushes to the main branch (modify as needed)
  
