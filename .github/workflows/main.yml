@@ -2,12 +2,14 @@ name: github
  
 on:
   push:
+    paths:
+      - 'test_dbt_qw/glossary/**'  # Define the path to the folder you want to trigger the workflow for
     branches:
       - main  # Trigger on pushes to the main branch (modify as needed)
  
 jobs:
   ingest-yaml:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
  
     steps:
       - name: Checkout code
@@ -25,7 +27,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Using GitHub token for authentication
         run: |
-          curl -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3.raw" -o nested_glossary_test.yaml -L https://raw.githubusercontent.com/puneet664/test_dbt_qw/main/nested_glossary_test.yaml
+          curl -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3.raw" -o nested_glossary_test.yaml -L https://raw.githubusercontent.com/puneet664/test_dbt_qw/main/glossary/nested_glossary_test.yml
  
       - name: Ingest YAML using datahub
         run: |
