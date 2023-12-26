@@ -39,7 +39,7 @@ jobs:
          git config --local user.email "action@github.com"
          git config --local user.name "GitHub Action"
  
-         git add ./glossary  # Stage the generated file within the existing folder
+         git add glossary  # Stage the generated file within the existing folder
 
          git commit -m "Generated YAML from Excel"
-         git push origin main glossary
+         git push origin main
