@@ -1,45 +1,790 @@
-'{"LO ":"Entity1","Definition":"Entities involved in the process ","L1":"Firm","Definition.1":"Legal
-  entity subscribed to the services "} {"LO ":null,"Definition":null,"L1":"Counterparty","Definition.1":"The
-  other party involved e.g. custodian, third-party bank, brockers , asset managers
-  and etc.."} {"LO ":null,"Definition":null,"L1":"Third Party Vendor","Definition.1":"A
-  external company that provides services to Alphea.  There is an agreement with them
-  in place."} {"LO ":"Client ","Definition":"Main client and what matters to the client","L1":"Client
-  core details","Definition.1":"Details of the end-client (e.g. name\/address)"} {"LO
-  ":null,"Definition":null,"L1":"Client Investment Details","Definition.1":"Client''s
-  preferences and restirctions (securities, segements)"} {"LO ":null,"Definition":null,"L1":"Assets
-  and Liabilities ","Definition.1":"Assets and liabilities of the individual investor"}
-  {"LO ":null,"Definition":null,"L1":"Account ","Definition.1":"Details about the
-  various financial accounts that a client holds"} {"LO ":"Workforce","Definition":"Personnel
-  involved ","L1":"Client servicing Employee","Definition.1":"Front desk  personnel
-  interacting with the client "} {"LO ":"Workforce","Definition":"Personnel involved
-  ","L1":"Client Supporting Employee","Definition.1":"Compliance officer, product
-  specialists, credit officers etc\u2026"} {"LO ":"Workforce","Definition":"Personnel
-  involved ","L1":"Users ","Definition.1":"IT, Marketing , other Quantum Wealth users  "}
-  {"LO ":"Service Offerings","Definition":"What is offered to clients ","L1":"Securities","Definition.1":"Information
-  on different types of securities "} {"LO ":null,"Definition":null,"L1":"Financial
-  Plan","Definition.1":"A strategy\/roadmap that outlines main financial goals of
-  the client"} {"LO ":null,"Definition":null,"L1":"Insurance Products ","Definition.1":"Various
-  types of insurance policies offered to clients to manage risks, protect assets,
-  and provide financial security."} {"LO ":null,"Definition":null,"L1":"Third-Party
-  Investment Models","Definition.1":"Investment Strategies Developed by External Entities
-  "} {"LO ":null,"Definition":null,"L1":"Performance Engine","Definition.1":" A tool  used
-  to monitor and evaluate the performance of investments and portfolios. "} {"LO ":"Corporate
-  Services","Definition":"Supporting services and information","L1":"Sales\/Opportunity
-  Management ","Definition.1":null} {"LO ":null,"Definition":null,"L1":"Campaigns
-  Management ","Definition.1":"Campaign information, campaign analytics"} {"LO ":null,"Definition":null,"L1":"Team
-  management ","Definition.1":"e.g. Succession planning\/Promotions\/ team performance
-  management "} {"LO ":null,"Definition":null,"L1":"Reporting","Definition.1":"Different
-  reports (e.g. client reporting, regulatory, management, compliance, market research)"}
-  {"LO ":"Privacy Classification","Definition":" Categorization and labeling data
-  elements based on  sensitivity, importance, and the level of protection it requires
-  to ensure privacy and security.","L1":"Sensitivity Levels","Definition.1":"E.g High,
-  Medium , Low "} {"LO ":"Reference data ","Definition":"Reference data characterizes
-  or classifies or relates to other master data or information external to the organization.","L1":"Sectors
-  and Industries ","Definition.1":"A list of sectors, industry groups, industries
-  and related codes(from GICS)"} {"LO ":null,"Definition":null,"L1":"Geography","Definition.1":"A
-  list of georgaphical regions, geography, country and relatedd codes "} {"LO ":null,"Definition":null,"L1":"Currency","Definition.1":"List
-  of currencies and codes"} {"LO ":"Transactional data ","Definition":null,"L1":"Client
-  Transaction Data ","Definition.1":"Capital contributions, assets transfers, cash\/money
-  movements  and etc."} {"LO ":null,"Definition":null,"L1":"Investment Transaction
-  data ","Definition.1":"E.g Security investment transactions"} {"LO ":null,"Definition":null,"L1":"Trade
-  Order \/ Instruction Data","Definition.1":"Instructions for buying\/selling"}'
+version: 1
+source: DataHub
+owners:
+  users:
+  - datahub
+url: https://github.com/datahub-project/datahub/
+nodes:
+- name: Workforce
+  description: 'Personnel involved '
+  nodes:
+  - name: Client servicing Employee
+    description: 'Front desk  personnel interacting with the client '
+    nodes:
+    - name: Individual Client Servicing Employee  Profile
+      description: 'Data related to Client Servicing Employee information related
+        to Client Servicing Employees including demographics and education details '
+      owners:
+        users:
+        - datahub
+      nodes:
+      - name: Client Servicing Employee Core Information
+        description: Data related to Client Servicing Employee identifiers, name,
+          and contact details
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: Client Servicing Employee  ID
+          description: The unique identifier used to associated an Client Servicing
+            Employee, usually generated by a system.
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee First Name
+          description: 'The first name of Client Servicing Employee '
+          owners:
+            users:
+            - datahub
+        - name: 'Client Servicing Employee Middle Name '
+          description: Middle name of Client Servicing Employee (if applicable)
+          owners:
+            users:
+            - datahub
+        - name: 'Client Servicing Employee Surname '
+          description: 'Surname of Client Servicing Employee '
+          owners:
+            users:
+            - datahub
+        - name: 'Client Servicing Employee Email '
+          description: 'Email address of Client Servicing Employee '
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee Phone Number
+          description: 'Phone Number of Client Servicing Employee '
+          owners:
+            users:
+            - datahub
+        - name: 'Client Servicing Employee Address Line 1 '
+          description: 'The address Line 1  of the Client Servicing Employee which
+            is used for any official communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee Address Line 2
+          description: 'The address Line 2  of the Client Servicing Employee which
+            is used for any official communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee Address Line 3
+          description: 'The address Line 3  of the Client Servicing Employee which
+            is used for any official communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: 'Client Servicing Employee City '
+          description: 'The address city  of the Client Servicing Employee which is
+            used for any official communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee Zip Code
+          description: 'The address zip code  of the Client Servicing Employee which
+            is used for any official communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: 'Client Servicing Employee Country '
+          description: 'The address country  of the Client Servicing Employee which
+            is used for any official communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee UAE Visa Number
+          description: Aunique sequence of numbers printed on UAE Visa
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee UAE Visa Issue Date
+          description: Date  UAE Visa   is supplied to a person
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee UAE Visa  Expiry Date
+          description: Date after which UAE Visa  is no longer valid
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee Passport Number
+          description: A unique sequence of numbers printed on national identification
+            documents
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee Passport/ID Country of Issue
+          description: A geographic area, in which the passport was issued
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee Passport Issue Date
+          description: Date a Passport is supplied to a person
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee Passport Expiry Date
+          description: Date after which a Passport is no longer valid
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee EID  Number
+          description: 'A unique sequence of numbers printed on Emirates ID '
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee EID Issue Date
+          description: Date  Emirates ID  is supplied to a person
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee EID Expiry Date
+          description: Date after which Emirates ID  is no longer valid
+          owners:
+            users:
+            - datahub
+      - name: Client Servicing Employee Demographic Data
+        description: Data related to individual Client Servicing Employee's age,  date
+          of birth which is utilized to understand demographic profile of an individual
+          investor
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: Client Servicing Employee Date of Birth
+          description: Captures the date of birth of an Client Servicing Employee
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee Gender
+          description: 'Captured the gender of an Client Servicing Employee '
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee Religion
+          description: Label or an organized spiritual group that an individual Client
+            Servicing Employee is a member of or follows
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee Marital Status
+          description: This field specifies the Client Servicing Employee's marital
+            status. Sample values are "S" (single), "M" (married), "D" (divorced),
+            "E" (separated) and "W" (widow/widower).
+          owners:
+            users:
+            - datahub
+      - name: Client Servicing Employee Education, Licenses & Registrations
+        description: Data related to Client Servicing Employee's education history,
+          license, and certifications
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: Client Servicing Employee Education Level
+          description: This field contains the highest level of education attained
+            by the Client Servicing Employee. Sample values include "None", "Bachelor",
+            "Masters", "PHd"
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee License Name
+          description: Name of license that person is holding  (licenses to perform
+            wealth management - e.g. Certified Financial Planner (CFP) and Chartered
+            Wealth Manager (CWM))
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee License ID
+          description: 'Captures the unique ID or candidate code associated with Client
+            Servicing Employee''s certification or license '
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee License Status
+          description: Captures the current status or progress of Client Servicing
+            Employee's license or certificate (e.g., in progress, complete, valid)
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee License Expiration date
+          description: Captures the expiration date of Client Servicing Employee's
+            license or certificate
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee License Issuing Authority
+          description: Captures the name of authority which has issues the license
+            or certificate
+          owners:
+            users:
+            - datahub
+    - name: Employment Relationship
+      description: Data related to Client Servicing Employee's job details and other
+        attributes describing his / her employment relationship with PIMCO
+      owners:
+        users:
+        - datahub
+      nodes:
+      - name: Client Servicing Employee Job Information
+        description: This data category captures attributes that describe an Client
+          Servicing Employee's role in the organization such as job title, job id,
+          business unit, and details related to work permit / authorization.
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: Client Servicing Employee Job Title
+          description: Captures the official title or designation of the Client Servicing
+            Employee in an organization
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee Team ID
+          description: 'Identifier of the team person belongs to '
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee Role
+          description: Name of the role client servicing employee (Advisor/RM and
+            etc..)
+          owners:
+            users:
+            - datahub
+      - name: Employment Data
+        description: This data category captures attributes that describe the current
+          status and relevant dates of employment
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: Client Servicing Employee Original Start Date
+          description: Captures the date the Client Servicing Employee originally
+            joined the organization
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee Service Termination Date
+          description: Captures the termination date when an Client Servicing Employee
+            was relieved from his / her services
+          owners:
+            users:
+            - datahub
+      - name: Client Servicing Employee Reporting Hierarchy
+        description: Data related to Client Servicing Employee's reporting in structure
+          for his / her team (e.g., Reporting Manager ID, Reporting Manager Name)
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: Client Servicing Employee Reports To ID
+          description: 'This field contains the "Client Servicing Employee ID" of
+            the direct manager to whom the Client Servicing Employee reports. '
+          owners:
+            users:
+            - datahub
+        - name: Client Servicing Employee Reports To Name
+          description: This field contains the "Client Servicing Employee Name" of
+            the direct manager to whom the Client Servicing Employee reports
+          owners:
+            users:
+            - datahub
+- name: Workforce
+  description: 'Personnel involved '
+  nodes:
+  - name: Client Supporting Employee
+    description: "Compliance officer, product specialists, credit officers etc\u2026"
+    nodes:
+    - name: Individual Client Supporting Employee  Profile
+      description: 'Data related to Client Supporting Employee information related
+        to Client Supporting Employees including demographics and education details '
+      owners:
+        users:
+        - datahub
+      nodes:
+      - name: Client Supporting Employee Core Information
+        description: Data related to Client Supporting Employee identifiers, name,
+          and contact details
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: Client Supporting Employee  ID
+          description: The unique identifier used to associated an Client Supporting
+            Employee, usually generated by a system.
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee First Name
+          description: 'The first name of Client Supporting Employee '
+          owners:
+            users:
+            - datahub
+        - name: 'Client Supporting Employee Middle Name '
+          description: Middle name of Client Supporting Employee (if applicable)
+          owners:
+            users:
+            - datahub
+        - name: 'Client Supporting Employee Surname '
+          description: 'Surname of Client Supporting Employee '
+          owners:
+            users:
+            - datahub
+        - name: 'Client Supporting Employee Email '
+          description: 'Email address of Client Supporting Employee '
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee Phone Number
+          description: 'Phone Number of Client Supporting Employee '
+          owners:
+            users:
+            - datahub
+        - name: 'Client Supporting Employee Address Line 1 '
+          description: 'The address Line 1  of the Client Supporting Employee which
+            is used for any official communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee Address Line 2
+          description: 'The address Line 2  of the Client Supporting Employee which
+            is used for any official communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee Address Line 3
+          description: 'The address Line 3  of the Client Supporting Employee which
+            is used for any official communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: 'Client Supporting Employee City '
+          description: 'The address city  of the Client Supporting Employee which
+            is used for any official communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee Zip Code
+          description: 'The address zip code  of the Client Supporting Employee which
+            is used for any official communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: 'Client Supporting Employee Country '
+          description: 'The address country  of the Client Supporting Employee which
+            is used for any official communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee UAE Visa Number
+          description: Aunique sequence of numbers printed on UAE Visa
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee UAE Visa Issue Date
+          description: Date  UAE Visa   is supplied to a person
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee UAE Visa  Expiry Date
+          description: Date after which UAE Visa  is no longer valid
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee Passport Number
+          description: A unique sequence of numbers printed on national identification
+            documents
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee Passport/ID Country of Issue
+          description: A geographic area, in which the passport was issued
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee Passport Issue Date
+          description: Date a Passport is supplied to a person
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee Passport Expiry Date
+          description: Date after which a Passport is no longer valid
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee EID  Number
+          description: 'A unique sequence of numbers printed on Emirates ID '
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee EID Issue Date
+          description: Date  Emirates ID  is supplied to a person
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee EID Expiry Date
+          description: Date after which Emirates ID  is no longer valid
+          owners:
+            users:
+            - datahub
+      - name: Client Supporting Employee Demographic Data
+        description: Data related to individual Client Supporting Employee's age,  date
+          of birth which is utilized to understand demographic profile of an individual
+          investor
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: Client Supporting Employee Date of Birth
+          description: Captures the date of birth of an Client Supporting Employee
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee Gender
+          description: 'Captured the gender of an Client Supporting Employee '
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee Religion
+          description: Label or an organized spiritual group that an individual Client
+            Supporting Employee is a member of or follows
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee Marital Status
+          description: This field specifies the Client Supporting Employee's marital
+            status. Sample values are "S" (single), "M" (married), "D" (divorced),
+            "E" (separated) and "W" (widow/widower).
+          owners:
+            users:
+            - datahub
+      - name: Client Supporting Employee Education
+        description: Data related to Client Supporting Employee's education history,
+          license, and certifications
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: Client Supporting Employee Education Level
+          description: This field contains the highest level of education attained
+            by the Client Supporting Employee. Sample values include "None", "Bachelor",
+            "Masters", "PHd"
+          owners:
+            users:
+            - datahub
+    - name: Employment Relationship
+      description: Data related to Client Supporting Employee's job details and other
+        attributes describing his / her employment relationship with PIMCO
+      owners:
+        users:
+        - datahub
+      nodes:
+      - name: Client Supporting Employee Job Information
+        description: This data category captures attributes that describe an Client
+          Supporting Employee's role in the organization such as job title, job id,
+          business unit, and details related to work permit / authorization.
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: Client Supporting Employee Job Title
+          description: Captures the official title or designation of the Client Supporting
+            Employee in an organization
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee Team ID
+          description: 'Identifier of the team person belongs to '
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee Role
+          description: 'Name of the role Client Supporting Employee '
+          owners:
+            users:
+            - datahub
+      - name: Employment Data
+        description: This data category captures attributes that describe the current
+          status and relevant dates of employment
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: Client Supporting Employee Original Start Date
+          description: Captures the date the Client Supporting Employee originally
+            joined the organization
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee Service Termination Date
+          description: Captures the termination date when an Client Supporting Employee
+            was relieved from his / her services
+          owners:
+            users:
+            - datahub
+      - name: Client Supporting Employee Reporting Hierarchy
+        description: Data related to Client Supporting Employee's reporting in structure
+          for his / her team (e.g., Reporting Manager ID, Reporting Manager Name)
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: Client Supporting Employee Reports To ID
+          description: 'This field contains the "Client Supporting Employee ID" of
+            the direct manager to whom the Client Supporting Employee reports. '
+          owners:
+            users:
+            - datahub
+        - name: Client Supporting Employee Reports To Name
+          description: This field contains the "Client Supporting Employee Name" of
+            the direct manager to whom the Client Supporting Employee reports
+          owners:
+            users:
+            - datahub
+- name: Workforce
+  description: 'Personnel involved '
+  nodes:
+  - name: 'Users '
+    description: 'IT, Marketing , other Quantum Wealth users  '
+    nodes:
+    - name: Individual User  Profile
+      description: 'Data related to User information related to Users including demographics
+        and education details '
+      owners:
+        users:
+        - datahub
+      nodes:
+      - name: User Core Information
+        description: Data related to User identifiers, name, and contact details
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: User  ID
+          description: The unique identifier used to associated an User, usually generated
+            by a system.
+          owners:
+            users:
+            - datahub
+        - name: User First Name
+          description: 'The first name of User '
+          owners:
+            users:
+            - datahub
+        - name: 'User Middle Name '
+          description: Middle name of User (if applicable)
+          owners:
+            users:
+            - datahub
+        - name: 'User Surname '
+          description: 'Surname of User '
+          owners:
+            users:
+            - datahub
+        - name: 'User Email '
+          description: 'Email address of User '
+          owners:
+            users:
+            - datahub
+        - name: User Phone Number
+          description: 'Phone Number of User '
+          owners:
+            users:
+            - datahub
+        - name: 'User Address Line 1 '
+          description: 'The address Line 1  of the User which is used for any official
+            communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: User Address Line 2
+          description: 'The address Line 2  of the User which is used for any official
+            communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: User Address Line 3
+          description: 'The address Line 3  of the User which is used for any official
+            communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: 'User City '
+          description: 'The address city  of the User which is used for any official
+            communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: User Zip Code
+          description: 'The address zip code  of the User which is used for any official
+            communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: 'User Country '
+          description: 'The address country  of the User which is used for any official
+            communication by the firm  '
+          owners:
+            users:
+            - datahub
+        - name: User UAE Visa Number
+          description: Aunique sequence of numbers printed on UAE Visa
+          owners:
+            users:
+            - datahub
+        - name: User UAE Visa Issue Date
+          description: Date  UAE Visa   is supplied to a person
+          owners:
+            users:
+            - datahub
+        - name: User UAE Visa  Expiry Date
+          description: Date after which UAE Visa  is no longer valid
+          owners:
+            users:
+            - datahub
+        - name: User Passport Number
+          description: A unique sequence of numbers printed on national identification
+            documents
+          owners:
+            users:
+            - datahub
+        - name: User Passport/ID Country of Issue
+          description: A geographic area, in which the passport was issued
+          owners:
+            users:
+            - datahub
+        - name: User Passport Issue Date
+          description: Date a Passport is supplied to a person
+          owners:
+            users:
+            - datahub
+        - name: User Passport Expiry Date
+          description: Date after which a Passport is no longer valid
+          owners:
+            users:
+            - datahub
+        - name: User EID  Number
+          description: 'A unique sequence of numbers printed on Emirates ID '
+          owners:
+            users:
+            - datahub
+        - name: User EID Issue Date
+          description: Date  Emirates ID  is supplied to a person
+          owners:
+            users:
+            - datahub
+        - name: User EID Expiry Date
+          description: Date after which Emirates ID  is no longer valid
+          owners:
+            users:
+            - datahub
+      - name: User Demographic Data
+        description: Data related to individual User's age,  date of birth which is
+          utilized to understand demographic profile of an individual investor
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: User Date of Birth
+          description: Captures the date of birth of an User
+          owners:
+            users:
+            - datahub
+        - name: User Gender
+          description: 'Captured the gender of an User '
+          owners:
+            users:
+            - datahub
+        - name: User Religion
+          description: Label or an organized spiritual group that an individual User
+            is a member of or follows
+          owners:
+            users:
+            - datahub
+        - name: User Marital Status
+          description: This field specifies the User's marital status. Sample values
+            are "S" (single), "M" (married), "D" (divorced), "E" (separated) and "W"
+            (widow/widower).
+          owners:
+            users:
+            - datahub
+      - name: User Education
+        description: Data related to User's education history, license, and certifications
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: User Education Level
+          description: This field contains the highest level of education attained
+            by the User. Sample values include "None", "Bachelor", "Masters", "PHd"
+          owners:
+            users:
+            - datahub
+    - name: Employment Relationship
+      description: Data related to User's job details and other attributes describing
+        his / her employment relationship with PIMCO
+      owners:
+        users:
+        - datahub
+      nodes:
+      - name: User Job Information
+        description: This data category captures attributes that describe an User's
+          role in the organization such as job title, job id, business unit, and details
+          related to work permit / authorization.
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: User Job Title
+          description: Captures the official title or designation of the User in an
+            organization
+          owners:
+            users:
+            - datahub
+        - name: 'User Department ID '
+          description: 'Identifier of the department person belongs to '
+          owners:
+            users:
+            - datahub
+        - name: User Role
+          description: 'Name of the User role '
+          owners:
+            users:
+            - datahub
+      - name: Employment Data
+        description: This data category captures attributes that describe the current
+          status and relevant dates of employment
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: User Original Start Date
+          description: Captures the date the User originally joined the organization
+          owners:
+            users:
+            - datahub
+        - name: User Service Termination Date
+          description: Captures the termination date when an User was relieved from
+            his / her services
+          owners:
+            users:
+            - datahub
+      - name: User Reporting Hierarchy
+        description: Data related to User's reporting in structure for his / her team
+          (e.g., Reporting Manager ID, Reporting Manager Name)
+        owners:
+          users:
+          - datahub
+        terms:
+        - name: User Reports To ID
+          description: 'This field contains the "User ID" of the direct manager to
+            whom the User reports. '
+          owners:
+            users:
+            - datahub
+        - name: User Reports To Name
+          description: This field contains the "User Name" of the direct manager to
+            whom the User reports
+          owners:
+            users:
+            - datahub
