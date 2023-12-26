@@ -1,1 +1,30 @@
-
+name: Run Python Script
+ 
+on:
+  push:
+    branches:
+      - main  # Replace with your branch name
+ 
+jobs:
+  run-script:
+    runs-on: windows-latest
+ 
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+ 
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Replace with your Python version
+ 
+      - name: Run Python Script
+        run: python python_git_read.py  # Replace with your Python script name
+      - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+ 
+        git add .
+        git commit -m "Generated YAML from Excel"
+        git push
