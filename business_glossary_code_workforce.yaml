@@ -1,0 +1,45 @@
+'{"LO ":"Entity1","Definition":"Entities involved in the process ","L1":"Firm","Definition.1":"Legal
+  entity subscribed to the services "} {"LO ":null,"Definition":null,"L1":"Counterparty","Definition.1":"The
+  other party involved e.g. custodian, third-party bank, brockers , asset managers
+  and etc.."} {"LO ":null,"Definition":null,"L1":"Third Party Vendor","Definition.1":"A
+  external company that provides services to Alphea.  There is an agreement with them
+  in place."} {"LO ":"Client ","Definition":"Main client and what matters to the client","L1":"Client
+  core details","Definition.1":"Details of the end-client (e.g. name\/address)"} {"LO
+  ":null,"Definition":null,"L1":"Client Investment Details","Definition.1":"Client''s
+  preferences and restirctions (securities, segements)"} {"LO ":null,"Definition":null,"L1":"Assets
+  and Liabilities ","Definition.1":"Assets and liabilities of the individual investor"}
+  {"LO ":null,"Definition":null,"L1":"Account ","Definition.1":"Details about the
+  various financial accounts that a client holds"} {"LO ":"Workforce","Definition":"Personnel
+  involved ","L1":"Client servicing Employee","Definition.1":"Front desk  personnel
+  interacting with the client "} {"LO ":"Workforce","Definition":"Personnel involved
+  ","L1":"Client Supporting Employee","Definition.1":"Compliance officer, product
+  specialists, credit officers etc\u2026"} {"LO ":"Workforce","Definition":"Personnel
+  involved ","L1":"Users ","Definition.1":"IT, Marketing , other Quantum Wealth users  "}
+  {"LO ":"Service Offerings","Definition":"What is offered to clients ","L1":"Securities","Definition.1":"Information
+  on different types of securities "} {"LO ":null,"Definition":null,"L1":"Financial
+  Plan","Definition.1":"A strategy\/roadmap that outlines main financial goals of
+  the client"} {"LO ":null,"Definition":null,"L1":"Insurance Products ","Definition.1":"Various
+  types of insurance policies offered to clients to manage risks, protect assets,
+  and provide financial security."} {"LO ":null,"Definition":null,"L1":"Third-Party
+  Investment Models","Definition.1":"Investment Strategies Developed by External Entities
+  "} {"LO ":null,"Definition":null,"L1":"Performance Engine","Definition.1":" A tool  used
+  to monitor and evaluate the performance of investments and portfolios. "} {"LO ":"Corporate
+  Services","Definition":"Supporting services and information","L1":"Sales\/Opportunity
+  Management ","Definition.1":null} {"LO ":null,"Definition":null,"L1":"Campaigns
+  Management ","Definition.1":"Campaign information, campaign analytics"} {"LO ":null,"Definition":null,"L1":"Team
+  management ","Definition.1":"e.g. Succession planning\/Promotions\/ team performance
+  management "} {"LO ":null,"Definition":null,"L1":"Reporting","Definition.1":"Different
+  reports (e.g. client reporting, regulatory, management, compliance, market research)"}
+  {"LO ":"Privacy Classification","Definition":" Categorization and labeling data
+  elements based on  sensitivity, importance, and the level of protection it requires
+  to ensure privacy and security.","L1":"Sensitivity Levels","Definition.1":"E.g High,
+  Medium , Low "} {"LO ":"Reference data ","Definition":"Reference data characterizes
+  or classifies or relates to other master data or information external to the organization.","L1":"Sectors
+  and Industries ","Definition.1":"A list of sectors, industry groups, industries
+  and related codes(from GICS)"} {"LO ":null,"Definition":null,"L1":"Geography","Definition.1":"A
+  list of georgaphical regions, geography, country and relatedd codes "} {"LO ":null,"Definition":null,"L1":"Currency","Definition.1":"List
+  of currencies and codes"} {"LO ":"Transactional data ","Definition":null,"L1":"Client
+  Transaction Data ","Definition.1":"Capital contributions, assets transfers, cash\/money
+  movements  and etc."} {"LO ":null,"Definition":null,"L1":"Investment Transaction
+  data ","Definition.1":"E.g Security investment transactions"} {"LO ":null,"Definition":null,"L1":"Trade
+  Order \/ Instruction Data","Definition.1":"Instructions for buying\/selling"}'
