@@ -23,10 +23,10 @@ jobs:
       - name: Run Python Script
         run: python python_git_read.py  # Replace with your Python script name
       - name: Commit files
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        run: |
+         git config --local user.email "action@github.com"
+         git config --local user.name "GitHub Action"
  
-        git add .
-        git commit -m "Generated YAML from Excel"
-        git push
+         git add .
+         git commit -m "Generated YAML from Excel"
+         git push
