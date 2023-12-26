@@ -33,13 +33,22 @@ jobs:
           curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }} " -o Data Taxonomy_workforce.xlsx -L https://github.com/puneet664/test_dbt_qw/blob/main/Data%20Taxonomy_workforce.xlsx
       - name: Run Python Script
         run: python excel_to_json.py  # Replace with your Python script name
-      
+      - name: Create glossary folder if it doesn't exist
+        run: mkdir -p glossary_new
+      - name: Create new file
+        run: echo "Content for your new file" > glossary_new/new_file.yaml
+ 
+      - name: List files in glossary folder (for verification)
+        run: ls -l glossary_new/
+ 
+      - name: Display Git status
+        run: git status
       - name: Commit files
         run: |
          git config --local user.email "action@github.com"
          git config --local user.name "GitHub Action"
  
-         git add glossary/nested_glossary_test.yml  # Stage the generated file within the existing folder
+         git add glossary_new/nested_glossary_test.yml  # Stage the generated file within the existing folder
 
          git commit -m "Generated YAML from Excel"
          git push origin main
