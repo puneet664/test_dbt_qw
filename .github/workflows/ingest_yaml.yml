@@ -42,4 +42,4 @@ jobs:
          git add ./glossary  # Stage the generated file within the existing folder
 
          git commit -m "Generated YAML from Excel"
-         git push
+         git push origin main glossary
