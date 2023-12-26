@@ -87,6 +87,6 @@ for sheet in sheet_name:
 # ymal_string=yaml.dump(final_json, sort_keys=False)
 # print("The YAML string is:")\
 # print(ymal_string)
-with open('business_glossary_code_workforce.yaml', 'w') as outfile:
+with open('new_file.yml', 'w') as outfile:
     yaml.dump(final_json, outfile, sort_keys=False, default_flow_style=False)
    
