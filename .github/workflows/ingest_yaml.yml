@@ -32,23 +32,26 @@ jobs:
           #run: python -m pip install 
           curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }} " -o Data Taxonomy_workforce.xlsx -L https://github.com/puneet664/test_dbt_qw/blob/main/Data%20Taxonomy_workforce.xlsx
       - name: Run Python Script
-        run: python excel_to_json.py  # Replace with your Python script name
-      - name: Create glossary folder if it doesn't exist
-        run: mkdir -p glossary_new
-      - name: Create new file
-        run: echo "Content for your new file" > glossary_new/new_file.yaml
- 
-      #- name: List files in glossary folder (for verification)
-        #run: ls -l glossary_new/
- 
-      - name: Display Git status
-        run: git status
-      - name: Commit files
+        run: python excel_to_json.py  # Replace with your Python script name 
+      - name: Create glossary_new folder if it doesn't exist
         run: |
-         git config --local user.email "action@github.com"
-         git config --local user.name "GitHub Action"
+          mkdir -p glossary_new
+          echo "Content for your new file" > glossary_new/new_file.yml
  
-         git add glossary_new/new_file.yml  # Stage the generated file within the existing folder
-
-         git commit -m "Generated YAML from Excel"
-         git push
+      - name: Display file contents (for verification)
+        run: cat glossary_new/new_file.yml
+ 
+      - name: Configure Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+ 
+      - name: Add changes
+        run: |
+          git add glossary_new/
+          git status  # Display status for verification
+ 
+      - name: Commit changes
+        run: |
+          git commit -m "Add new file to glossary_new folder"
+          git push origin main
