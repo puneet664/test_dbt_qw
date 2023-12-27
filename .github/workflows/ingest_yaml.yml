@@ -35,11 +35,11 @@ jobs:
         run: python excel_to_json.py  # Replace with your Python script name 
       - name: Create glossary_new folder if it doesn't exist
         run: |
-          mkdir -p glossary_new
+          mkdir -p glossary
           echo "Content for your new file" > glossary_new/new_file.yml
  
       - name: Display file contents (for verification)
-        run: cat glossary_new/new_file.yml
+        run: cat glossary/new_file.yml
  
       - name: Configure Git
         run: |
@@ -48,7 +48,7 @@ jobs:
  
       - name: Add changes
         run: |
-          git add glossary_new/
+          git add glossary/
           git status  # Display status for verification
  
       - name: Commit changes
