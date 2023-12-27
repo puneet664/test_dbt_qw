@@ -39,7 +39,7 @@ jobs:
         run: echo "Content for your new file" > glossary_new/new_file.yaml
  
       - name: List files in glossary folder (for verification)
-        run: ls -l glossary_new/
+        #run: ls -l glossary_new/
  
       - name: Display Git status
         run: git status
@@ -51,4 +51,4 @@ jobs:
          git add glossary_new/new_file.yml  # Stage the generated file within the existing folder
 
          git commit -m "Generated YAML from Excel"
-         git push origin main
+         git push  main
