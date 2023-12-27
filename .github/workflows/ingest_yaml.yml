@@ -51,4 +51,4 @@ jobs:
          git add glossary_new/new_file.yml  # Stage the generated file within the existing folder
 
          git commit -m "Generated YAML from Excel"
-         git push  main
+         git push
