@@ -38,7 +38,7 @@ jobs:
       - name: Create new file
         run: echo "Content for your new file" > glossary_new/new_file.yaml
  
-      - name: List files in glossary folder (for verification)
+      #- name: List files in glossary folder (for verification)
         #run: ls -l glossary_new/
  
       - name: Display Git status
