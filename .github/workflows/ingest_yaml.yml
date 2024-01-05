@@ -55,3 +55,6 @@ jobs:
         run: |
           git commit -m "Add new file to glossary_new folder"
           git push origin main
+      - name: Ingest YAML using datahub
+        run: |
+          datahub ingest -c local_recipe.dhub.yaml
