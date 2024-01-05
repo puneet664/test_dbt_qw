@@ -32,7 +32,9 @@ jobs:
           #run: python -m pip install 
           curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }} " -o Data Taxonomy_workforce.xlsx -L https://github.com/puneet664/test_dbt_qw/blob/main/Data%20Taxonomy_workforce.xlsx
       - name: Run Python Script
-        run: python excel_to_json.py  # Replace with your Python script name 
+        run: python excel_to_json.py  # Replace with your Python script name
+      - name: Install acryl-datahub
+        run: python -m pip install acryl-datahub  # Replace with the correct package name
       - name: Create glossary_new folder if it doesn't exist
         run: |
           #mkdir -p glossary_new
