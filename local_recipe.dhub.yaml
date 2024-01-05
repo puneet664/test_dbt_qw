@@ -1,0 +1,9 @@
+source:
+    type: datahub-business-glossary
+    config:
+        file: business_gls_workforce.yml
+        enable_auto_id: true
+sink:
+    type: datahub-rest
+    config:
+         server: 'http://localhost:8080'
